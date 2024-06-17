@@ -1,0 +1,36 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: tania
+      changes:
+        - createTable:
+            tableName: irregular_verbs
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: infinitive
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: past_simple
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: past_participle
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: translation
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+
